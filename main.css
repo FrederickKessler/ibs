@@ -1,6 +1,6 @@
 .nav a {
   color: #5a5a5a;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
   padding: 14px 10px;
   text-transform: uppercase;
@@ -38,7 +38,7 @@
   background-color: #f7f7f7;
 }
 
-.learn-more h3 {
+.learn-more h2 {
   font-family: 'Shift', sans-serif;
   font-size: 18px;
   font-weight: bold;
