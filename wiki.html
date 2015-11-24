@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<html lang="de"> 
+
+	<head>
+	  <meta charset="utf-8">
+	  
+	  <title>Wikipedia Suche</title>
+	  
+	</head>
+
+	<body>
+		<h1>Wikipedia Suche</h1>
+		
+		<form action="http://de.wikipedia.org/wiki" method="post" target="_blank" name="frmWiki">
+			<label for="frmWiki">Search Form</label>
+			<label for="search">Enter search text</label>
+			<table>
+				<tbody>
+					<tr>
+						<th>Wikipedia Suche</th>
+						<td>
+							<a href="http://de.wikipedia.org/wiki/Hauptseite">Wikipedia</a>
+							<input maxlength="255" size="25" name="xsearch" id="search" >
+							<input value="de" name="hl" id="frmWiki" type="hidden">
+						</td>
+						<td>
+							<input onclick="window.document.frmWiki.action = 'http://de.wikipedia.org/wiki/' + document.frmWiki.xsearch.value;" value="Suche" name="btnG" type="submit">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>
