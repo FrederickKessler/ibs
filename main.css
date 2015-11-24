@@ -61,7 +61,6 @@ body {
 .learn-more {
   background-color: #6c9dd5;
   margin: 5em;
-  border: 2px black;
 }
 
 .learn-more h2 {
@@ -77,8 +76,10 @@ body {
 
 .learn-more p {
   color: black;
+  padding-right: 1em;
 }
 
 .left {
   float: right;
 }
+
