@@ -1,12 +1,24 @@
 body {
-  background-color: white;
+  background-color: #fff;
+  background-image: url("src/back.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.nav-tabs {
+  text-align: center;
+}
+
+.nav-tabs li {
+  display: inline-block;
 }
 
 .nav a {
-  color: #6c9dd5;
+  color: #fff;
   font-size: 15px;
   font-weight: bold;
-  padding: 14px 10px;
+  padding: 4em 2em;
   text-transform: uppercase;
 }
 
@@ -14,11 +26,18 @@ body {
   display: inline;
 }
 
+.nav li a:hover {
+  background-color: #6c9dd5;
+}
+
 .jumbotron {
   background-image:url("src/sky.jpg");
   height: 180px;
   background-repeat: repeat;
-  margin: 20px;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 5em;
+  margin-top: 1em;
   background-size: cover;
 }
 
@@ -41,8 +60,8 @@ body {
 
 .learn-more {
   background-color: #6c9dd5;
-  margin: 20px;
-  padding: 20px;
+  margin: 5em;
+  border: 2px black;
 }
 
 .learn-more h2 {
@@ -60,3 +79,6 @@ body {
   color: black;
 }
 
+.left {
+  float: right;
+}
