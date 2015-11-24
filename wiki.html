@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <html lang="de"> 
 
 	<head>
@@ -13,7 +12,7 @@
 		<h1 tabindex = 1>Wikipedia Suche</h1>
 		
 		<form action="http://de.wikipedia.org/wiki" method="post" target="_blank" name="frmWiki">
-			<label for="frmWiki">Such Formular</label>	
+			
 			<br>
 			<br>
 			<label for="search">Bitte Suchtext für Volltextsuche eingeben</label>		
@@ -23,10 +22,9 @@
 						<th>Wikipedia Volltext Suche</th>
 						<td>
 							<input maxlength="255" size="25" name="xsearch" id="search" >
-							<input value="de" name="hl" id="frmWiki" type="hidden">
 						</td>
 						<td>
-							<input onclick="window.document.frmWiki.action = 'https://de.wikipedia.org/w/index.php?title=Spezial%3ASuche&profile=default&search=' + document.frmWiki.xsearch.value + '&fulltext=Search';" value="Suche" name="btnG" type="submit">
+							<input onclick="window.document.frmWiki.action = 'https://de.wikipedia.org/w/index.php?title=Spezial%3ASuche&amp;profile=default&amp;search=' + document.frmWiki.xsearch.value + '&amp;fulltext=Search';" value="Suche" name="btnG" type="submit">
 						</td>
 						
 					</tr>
@@ -40,12 +38,10 @@
 						<th>Wikipedia Artikel Suche</th>
 						<td>
 							<input maxlength="255" size="25" name="xsearch2" id="search2" >
-							<input value="de" name="hl" id="frmWiki" type="hidden">
 						</td>
 						<td>
 							<input onclick="window.document.frmWiki.action = 'https://de.wikipedia.org/wiki/' + document.frmWiki.xsearch2.value;" value="Suche" name="btnG" type="submit">
 						</td>
-						
 					</tr>
 				</tbody>
 			</table>
