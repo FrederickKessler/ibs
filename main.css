@@ -3,7 +3,7 @@ body {
 }
 
 .nav a {
-  color: #6495ed;
+  color: #6c9dd5;
   font-size: 15px;
   font-weight: bold;
   padding: 14px 10px;
@@ -15,15 +15,15 @@ body {
 }
 
 .jumbotron {
-  background-image:url("src/back.jpg");
-  height: 200px;
-  background-repeat: no-repeat;
+  background-image:url("src/sky.jpg");
+  height: 180px;
+  background-repeat: repeat;
+  margin: 20px;
   background-size: cover;
 }
 
 .jumbotron .container {
   position: relative;
-  top:20px;
 }
 
 .jumbotron h1 {
@@ -31,6 +31,7 @@ body {
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
+  text-align: left;
 }
 
 .jumbotron p {
@@ -39,7 +40,9 @@ body {
 }
 
 .learn-more {
-  background-color: #6495ed;
+  background-color: #6c9dd5;
+  margin: 20px;
+  padding: 20px;
 }
 
 .learn-more h2 {
