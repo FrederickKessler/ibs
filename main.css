@@ -23,7 +23,6 @@ body {
 }
 
 .jumbotron h1 {
-  padding-left: 2em;
   color: grey;
   font-size: 4em;  
   font-family: 'Shift', sans-serif;
@@ -38,7 +37,6 @@ body {
 
 .learn-more {
   background-color: #222222;
-  opacity: 0.8;
 }
 .learn-more img {
   background-color: #222222;
