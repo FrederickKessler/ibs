@@ -1,6 +1,6 @@
 body {
   padding-top: 50px;
-  padding-bottom: 30px;
+
   background-color: grey;
 }
 
@@ -71,10 +71,6 @@ body {
 
 .wiki {
   color: #000;
-}
-
-.left {
-  float: right;
 }
 
 .theme-showcase > p > .btn {
