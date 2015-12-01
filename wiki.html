@@ -45,15 +45,39 @@
 		<div class="row">
 	  	  <div class="col-md-12">
 			<div class="wiki">
-				<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
-					<fieldset>
-						<h2>Wikipedia Artikel- und Volltext Suche</h2>
-						<input type="text" name="search" value="" role="textbox"
-							id="suchbegriff" />
-						<button type="submit" name="artikel" role="button">Artikel Suche</button>
-						<button type="submit" name="volltext" role="button">Volltext Suche</button>
-					</fieldset>
-					<label for="suchbegriff">Suchbegriff eingeben</label>
+				<form action="http://de.wikipedia.org/wiki" method="post" target="_blank" name="frmWiki">	
+					<br>
+					<br>
+					<label for="search">Bitte Suchtext für Volltextsuche eingeben</label>		
+					<table>
+						<tbody>
+							<tr>
+								<th>Wikipedia Volltext Suche</th>
+								<td>
+									<input maxlength="255" size="25" name="xsearch" id="search" >
+								</td>
+								<td>
+									<input onclick="window.document.frmWiki.action = 'https://de.wikipedia.org/w/index.php?title=Spezial%3ASuche&amp;profile=default&amp;search=' + document.frmWiki.xsearch.value + '&amp;fulltext=Search';" value="Suche" name="btnG" type="submit">
+								</td>
+								
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<label for="search2">Bitte Suchtext für Artikelsuche eingeben</label>	
+					<table>
+						<tbody>
+							<tr>
+								<th>Wikipedia Artikel Suche</th>
+								<td>
+									<input maxlength="255" size="25" name="xsearch2" id="search2" >
+								</td>
+								<td>
+									<input onclick="window.document.frmWiki.action = 'https://de.wikipedia.org/wiki/' + document.frmWiki.xsearch2.value;" value="Suche" name="btnG" type="submit">
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</form>
 			  </div>
 			<br>
