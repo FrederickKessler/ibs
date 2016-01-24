@@ -20,7 +20,7 @@ function display(arr){
 		//key -> Name
 
 		var name = ["Answers", "Lecture Questions", "Preparation Questions", "Open Sessions",
-			"Closed Sessions", "Creators", "Active Users", "Active Students", "Loggedin Users", 
+			"Closed Sessions", "Creators", "Active Users", "Active Students", "Logged-In Users", 
 			"Interposed Questions", "Concept Questions", "Questions", "Sessions"];
 		
 		
