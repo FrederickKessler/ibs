@@ -1,6 +1,5 @@
 body {
   padding-top: 50px;
-
   background-color: #222222;
 }
 
@@ -90,4 +89,9 @@ body {
   padding: 2em;
   width: 70%; 
   height: auto;
+}
+
+.current {
+  color: grey;
+  font-size: 1.5em;
 }

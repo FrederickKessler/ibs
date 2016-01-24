@@ -13,21 +13,22 @@ function load(){
 }
 
 function display(arr){
-	//delete arr.answers;
-	//delete arr.activeStudents;
+	var i = 0;
 	$(".current").remove();
 	for(var key in arr) {
 		//arr[key] -> Wert
 		//key -> Name
-		//var s = key + ": " + arr[key] + "<br>";
-		
+
+		var name = ["Answers", "Lecture Questions", "Preparation Questions", "Open Sessions",
+			"Closed Sessions", "Creators", "Active Users", "Active Students", "Loggedin Users", 
+			"Interposed Questions", "Concept Questions", "Questions", "Sessions"];
 		
 		
 		console.log(key);
 		console.log(typeof(key));
-		var s = "<li class=\"current\" title=\""+key+"\"><span class=\"bar\" data-number=\""+arr[key]+"\"></span><span class=\"number\">"+arr[key]+"</span></li>";
+		var s = "<li class=\"current\" title=\""+name[i]+"\"><span class=\"bar\" data-number=\""+arr[key]+"\"></span><span class=\"number\">"+arr[key]+"</span></li>";
 		$(".title").append(s);
-		
+		++i;
 	}
 
 	$('.chart').horizBarChart({

@@ -7,13 +7,12 @@
   height: 23px;
   margin-top: 3px;
   position: relative;
-  left: 55px;
+  left: 90px;
 }
 
 .chart-horiz .chart li:before {
-  color: #fff;
   content: attr(title);
-  left: -150px;
+  left: -220px;
   position: absolute;
 }
 
