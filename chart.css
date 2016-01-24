@@ -25,13 +25,13 @@
 .chart-horiz .chart li:first-child { margin-top: 0 }
 
 .chart-horiz .chart li .bar {
-  background: #27ae60;
+  background: grey;
   height: 100%;
   min-width: 5px;
 }
 
 .chart-horiz .chart li .number {
-  color: #27ae60;
+  color: #fff;
   font-size: 18px;
   font-weight: bold;
   padding-left: 20px;
