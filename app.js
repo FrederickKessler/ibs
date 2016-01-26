@@ -23,10 +23,15 @@ function display(arr){
 			"Closed Sessions", "Creators", "Active Users", "Active Students", "Logged-In Users", 
 			"Interposed Questions", "Concept Questions", "Questions", "Sessions"];
 		
-		
+		if(i == 0){
+		  arr[key] = arr[key]/10;
+		  var s = "<li class=\"current\" title=\""+name[i]+"\"><span class=\"bar\" data-number=\""+arr[key]+"\"></span><span class=\"number\">"+arr[key]+"*10"+"</span></li>";
+		} else {
+		  var s = "<li class=\"current\" title=\""+name[i]+"\"><span class=\"bar\" data-number=\""+arr[key]+"\"></span><span class=\"number\">"+arr[key]+"</span></li>";
+		}
 		console.log(key);
 		console.log(typeof(key));
-		var s = "<li class=\"current\" title=\""+name[i]+"\"><span class=\"bar\" data-number=\""+arr[key]+"\"></span><span class=\"number\">"+arr[key]+"</span></li>";
+		
 		$(".title").append(s);
 		++i;
 	}

@@ -27,7 +27,7 @@
 .chart-horiz .chart li .bar {
   background: grey;
   height: 100%;
-  min-width: 5px;
+  min-width: 1px;
 }
 
 .chart-horiz .chart li .number {
